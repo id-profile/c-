@@ -90,6 +90,90 @@
                 </div>
             </div>
         </div>
+
+        <div class="feed-card animate-in">
+            <div class="flex items-center justify-between flex-wrap gap-4">
+                <div>
+                    <h2 class="section-title">Platform capabilities</h2>
+                    <p class="text-sm text-slate-500 mt-1">A production-ready stack covering core user features, realtime systems, safety, and admin control.</p>
+                </div>
+                <button class="ghost-button">View roadmap</button>
+            </div>
+            <div class="feature-grid mt-6">
+                <div class="feature-card">
+                    <h4>Authentication & Profile</h4>
+                    <ul class="feature-list">
+                        <li><i class="fa-solid fa-check"></i> Email + username registration</li>
+                        <li><i class="fa-solid fa-check"></i> JWT sessions & refresh</li>
+                        <li><i class="fa-solid fa-check"></i> Profile, avatar & cover editing</li>
+                        <li><i class="fa-solid fa-check"></i> Password reset & deactivation</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <h4>Posting System</h4>
+                    <ul class="feature-list">
+                        <li><i class="fa-solid fa-check"></i> Rich posts (text, markdown, media)</li>
+                        <li><i class="fa-solid fa-check"></i> Questions & discussions</li>
+                        <li><i class="fa-solid fa-check"></i> Drafts + visibility controls</li>
+                        <li><i class="fa-solid fa-check"></i> Media upload, preview & crop</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <h4>Feed & Discovery</h4>
+                    <ul class="feature-list">
+                        <li><i class="fa-solid fa-check"></i> Latest + trending feeds</li>
+                        <li><i class="fa-solid fa-check"></i> Search users, posts, tags</li>
+                        <li><i class="fa-solid fa-check"></i> Hashtag/topic feeds</li>
+                        <li><i class="fa-solid fa-check"></i> Offline cached feed</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <h4>Engagement</h4>
+                    <ul class="feature-list">
+                        <li><i class="fa-solid fa-check"></i> Like, upvote, downvote</li>
+                        <li><i class="fa-solid fa-check"></i> Nested comments & replies</li>
+                        <li><i class="fa-solid fa-check"></i> Bookmark & share links</li>
+                        <li><i class="fa-solid fa-check"></i> Follow/unfollow users</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <h4>Realtime & Interaction</h4>
+                    <ul class="feature-list">
+                        <li><i class="fa-solid fa-check"></i> Live notifications</li>
+                        <li><i class="fa-solid fa-check"></i> Realtime comments</li>
+                        <li><i class="fa-solid fa-check"></i> 1:1 chat + inbox</li>
+                        <li><i class="fa-solid fa-check"></i> Online status & live feed</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <h4>Safety & Trust</h4>
+                    <ul class="feature-list">
+                        <li><i class="fa-solid fa-check"></i> Report, block, mute flows</li>
+                        <li><i class="fa-solid fa-check"></i> XSS sanitization</li>
+                        <li><i class="fa-solid fa-check"></i> Rate limits + auto rules</li>
+                        <li><i class="fa-solid fa-check"></i> Sensitive content flags</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <h4>Admin Control</h4>
+                    <ul class="feature-list">
+                        <li><i class="fa-solid fa-check"></i> User bans + roles</li>
+                        <li><i class="fa-solid fa-check"></i> Content moderation</li>
+                        <li><i class="fa-solid fa-check"></i> System toggles + themes</li>
+                        <li><i class="fa-solid fa-check"></i> Reports, logs, IP audit</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <h4>Analytics & Reliability</h4>
+                    <ul class="feature-list">
+                        <li><i class="fa-solid fa-check"></i> DAU + growth charts</li>
+                        <li><i class="fa-solid fa-check"></i> Export CSV data</li>
+                        <li><i class="fa-solid fa-check"></i> CSRF + SQL protection</li>
+                        <li><i class="fa-solid fa-check"></i> Backup & error logging</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
 
     <aside class="hidden xl:block">

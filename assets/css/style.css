@@ -192,6 +192,46 @@ textarea:focus {
     margin-top: 1.25rem;
 }
 
+.section-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.feature-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.feature-card {
+    border: 1px solid var(--border);
+    border-radius: 1.25rem;
+    padding: 1.25rem;
+    background: var(--card);
+}
+
+.feature-card h4 {
+    font-weight: 600;
+}
+
+.feature-list {
+    margin-top: 0.75rem;
+    display: grid;
+    gap: 0.5rem;
+    color: var(--muted);
+    font-size: 0.875rem;
+}
+
+.feature-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.feature-list i {
+    color: var(--accent);
+}
+
 .accent-button {
     background: var(--accent);
     color: #fff;
