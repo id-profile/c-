@@ -58,6 +58,33 @@ const initUtilityScripts = () => {
     if (window.gsap) {
         window.gsap.from('.animate-in', { opacity: 0, y: 18, duration: 0.6, stagger: 0.08 });
     }
+
+    const feedSentinel = document.getElementById('feed-sentinel');
+    if (feedSentinel && 'IntersectionObserver' in window) {
+        const handleIntersect = (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    feedSentinel.textContent = 'Loading more…';
+                    if (window.Notyf) {
+                        new window.Notyf().success('Loading more posts');
+                    }
+                    setTimeout(() => {
+                        feedSentinel.textContent = 'You are all caught up';
+                    }, 1200);
+                }
+            });
+        };
+        const observer = new IntersectionObserver(handleIntersect, { threshold: 0.4 });
+        observer.observe(feedSentinel);
+    }
+
+    if (window.localforage) {
+        const cached = {
+            lastSync: new Date().toISOString(),
+            status: 'offline-ready',
+        };
+        window.localforage.setItem('pulse-feed-cache', cached);
+    }
 };
 
 document.addEventListener('DOMContentLoaded', () => {

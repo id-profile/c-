@@ -44,6 +44,27 @@
         </div>
 
         <div class="feed-card animate-in">
+            <div class="flex items-center justify-between flex-wrap gap-3">
+                <h2 class="section-title">Start a post</h2>
+                <span class="badge">Composer</span>
+            </div>
+            <div class="mt-4 grid gap-3 lg:grid-cols-[1fr,160px]">
+                <textarea class="w-full min-h-[120px]" placeholder="Share an update, question, or idea..."></textarea>
+                <div class="space-y-3">
+                    <button class="accent-button w-full">Publish</button>
+                    <button class="ghost-button w-full">Save draft</button>
+                    <button class="ghost-button w-full">Attach media</button>
+                </div>
+            </div>
+            <div class="mt-4 flex flex-wrap items-center gap-3 text-xs text-slate-500">
+                <span><i class="fa-regular fa-image"></i> Photo</span>
+                <span><i class="fa-regular fa-circle-play"></i> Video</span>
+                <span><i class="fa-solid fa-face-smile"></i> Emoji</span>
+                <span><i class="fa-solid fa-lock"></i> Followers only</span>
+            </div>
+        </div>
+
+        <div class="feed-card animate-in">
             <div class="flex items-start gap-4">
                 <div class="h-12 w-12 rounded-full bg-sky-100 flex items-center justify-center text-sky-500">
                     <i class="fa-solid fa-user"></i>
@@ -64,6 +85,10 @@
                         <span><i class="fa-regular fa-bookmark"></i> Save</span>
                     </div>
                 </div>
+            </div>
+            <div class="mt-4 border-t border-slate-200 pt-4 text-sm text-slate-500">
+                <button class="text-sky-500 font-medium">View 12 replies</button>
+                <p class="mt-2">Latest: “We need auto moderation and clear appeals.”</p>
             </div>
         </div>
 
@@ -88,6 +113,10 @@
                         <span><i class="fa-regular fa-bookmark"></i> Save</span>
                     </div>
                 </div>
+            </div>
+            <div class="mt-4 border-t border-slate-200 pt-4 text-sm text-slate-500">
+                <button class="text-sky-500 font-medium">Open thread</button>
+                <p class="mt-2">Realtime updates enabled • 3 people typing</p>
             </div>
         </div>
 
@@ -173,6 +202,10 @@
                     </ul>
                 </div>
             </div>
+        </div>
+
+        <div class="text-center text-xs text-slate-400 mt-6" id="feed-sentinel">
+            Scroll for more updates
         </div>
     </section>
 

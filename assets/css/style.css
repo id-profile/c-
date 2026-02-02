@@ -269,3 +269,9 @@ textarea:focus {
     position: sticky;
     top: 1.5rem;
 }
+
+.bottom-nav {
+    background: var(--card);
+    border-top: 1px solid var(--border);
+    padding-bottom: env(safe-area-inset-bottom);
+}

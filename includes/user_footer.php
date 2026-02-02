@@ -6,6 +6,16 @@
     </div>
 </footer>
 
+<nav class="bottom-nav lg:hidden fixed bottom-0 inset-x-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between text-xs text-slate-600">
+        <a class="flex flex-col items-center gap-1" href="/index.php"><i class="fa-solid fa-house text-lg"></i><span>Home</span></a>
+        <a class="flex flex-col items-center gap-1" href="#"><i class="fa-solid fa-magnifying-glass text-lg"></i><span>Search</span></a>
+        <button class="flex flex-col items-center gap-1 text-sky-500"><i class="fa-solid fa-circle-plus text-2xl"></i><span>Post</span></button>
+        <a class="flex flex-col items-center gap-1" href="#"><i class="fa-regular fa-bell text-lg"></i><span>Alerts</span></a>
+        <a class="flex flex-col items-center gap-1" href="/settings.php"><i class="fa-regular fa-user text-lg"></i><span>Profile</span></a>
+    </div>
+</nav>
+
 <script src="https://cdn.jsdelivr.net/npm/axios@1.6.8/dist/axios.min.js"></script>
 <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/clusterize.js@0.18.1/clusterize.min.js"></script>

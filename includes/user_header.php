@@ -21,7 +21,7 @@ $config = require __DIR__ . '/config.php';
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body class="bg-slate-50 text-slate-900 font-poppins">
-<header class="bg-white shadow-sm border-b border-slate-200">
+<header class="bg-white shadow-sm border-b border-slate-200 sticky top-0 z-50">
     <nav class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
         <div class="flex items-center justify-between">
             <div class="flex items-center gap-3">
@@ -42,4 +42,4 @@ $config = require __DIR__ . '/config.php';
         </div>
     </nav>
 </header>
-<main class="max-w-7xl mx-auto px-4 sm:px-6 py-8">
+<main class="max-w-7xl mx-auto px-4 sm:px-6 pt-8 pb-24">
