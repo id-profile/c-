@@ -1,0 +1,231 @@
+:root {
+    --bg: #f5f7fb;
+    --card: #ffffff;
+    --text: #0f172a;
+    --muted: #64748b;
+    --accent: #1d9bf0;
+    --accent-strong: #1578c5;
+    --ring: rgba(29, 155, 240, 0.2);
+    --border: rgba(148, 163, 184, 0.25);
+    --surface: #f0f5fb;
+}
+
+html[data-theme='dark'] {
+    --bg: #0f172a;
+    --card: #111827;
+    --text: #e2e8f0;
+    --muted: #94a3b8;
+    --accent: #1d9bf0;
+    --accent-strong: #3ea6f2;
+    --ring: rgba(29, 155, 240, 0.35);
+    --border: rgba(148, 163, 184, 0.2);
+    --surface: #0b1220;
+}
+
+html[data-theme='system'] {
+    --bg: #f5f7fb;
+    --card: #ffffff;
+    --text: #0f172a;
+    --muted: #64748b;
+    --accent: #1d9bf0;
+    --accent-strong: #1578c5;
+    --ring: rgba(29, 155, 240, 0.2);
+    --border: rgba(148, 163, 184, 0.25);
+    --surface: #f0f5fb;
+}
+
+@media (prefers-color-scheme: dark) {
+    html[data-theme='system'] {
+        --bg: #0f172a;
+        --card: #111827;
+        --text: #e2e8f0;
+        --muted: #94a3b8;
+        --accent: #1d9bf0;
+        --accent-strong: #3ea6f2;
+        --ring: rgba(29, 155, 240, 0.35);
+        --border: rgba(148, 163, 184, 0.2);
+        --surface: #0b1220;
+    }
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+}
+
+.font-poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.surface-card {
+    background: var(--card);
+    box-shadow: 0 18px 40px -30px rgba(15, 23, 42, 0.35);
+    border: 1px solid var(--border);
+}
+
+.accent-text {
+    color: var(--accent);
+}
+
+.admin-link {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    padding: 0.65rem 0.75rem;
+    border-radius: 0.5rem;
+    color: rgba(226, 232, 240, 0.7);
+    transition: all 0.2s ease;
+}
+
+.admin-link:hover {
+    background: rgba(148, 163, 184, 0.15);
+    color: #fff;
+}
+
+.theme-option {
+    border: 1px solid rgba(148, 163, 184, 0.3);
+    border-radius: 0.75rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.theme-option input {
+    accent-color: var(--accent);
+}
+
+.callout {
+    border-left: 4px solid var(--accent);
+    background: rgba(29, 155, 240, 0.12);
+}
+
+.badge {
+    background: rgba(29, 155, 240, 0.12);
+    color: var(--accent);
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+}
+
+.card-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.card-outline {
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    background: var(--card);
+}
+
+input[type='text'],
+select,
+textarea {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 0.75rem;
+    padding: 0.75rem 1rem;
+    width: 100%;
+}
+
+input[type='text']:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px var(--ring);
+}
+
+.app-shell {
+    display: grid;
+    grid-template-columns: 240px minmax(0, 1fr) 280px;
+    gap: 1.5rem;
+}
+
+@media (max-width: 1280px) {
+    .app-shell {
+        grid-template-columns: 200px minmax(0, 1fr) 240px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .app-shell {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+.sidebar-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 1.25rem;
+    padding: 1.25rem;
+}
+
+.nav-pill {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.65rem 0.85rem;
+    border-radius: 999px;
+    color: var(--text);
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.nav-pill:hover {
+    background: var(--surface);
+    color: var(--accent);
+}
+
+.feed-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+}
+
+.feed-card + .feed-card {
+    margin-top: 1.25rem;
+}
+
+.accent-button {
+    background: var(--accent);
+    color: #fff;
+    border-radius: 999px;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+}
+
+.accent-button:hover {
+    background: var(--accent-strong);
+}
+
+.ghost-button {
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 0.7rem 1.4rem;
+    color: var(--text);
+    font-weight: 500;
+}
+
+.search-input {
+    background: var(--surface);
+    border: 1px solid transparent;
+    border-radius: 999px;
+    padding: 0.6rem 1.2rem;
+    width: 100%;
+}
+
+.search-input:focus {
+    background: var(--card);
+    border-color: var(--accent);
+}
+
+.sticky-panel {
+    position: sticky;
+    top: 1.5rem;
+}
